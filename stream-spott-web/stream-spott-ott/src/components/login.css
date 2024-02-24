@@ -1,0 +1,89 @@
+/* Resetting default margin and padding */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #000; /*Netflix-like background color*/
+  z-index: 10;
+  color: #fff; /* Text color */
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+}
+
+.slide-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  position: relative;
+  height: 100vh;
+  width: 100%;
+  background-size: cover;
+  background-position: center;
+}
+
+.login-box h2 {
+  margin-bottom: 15px;
+}
+
+form input,
+form button {
+  display: block;
+  width: 100%;
+  margin-bottom: 15px;
+  padding: 10px;
+  border-radius: 4px;
+  border: none;
+}
+
+form button {
+  background-color: #000; /* Netflix-like button color */
+  color: #fff;
+  cursor: pointer;
+}
+
+.carousel {
+  width: 100%;
+  height: 100vh; /* Adjust height as needed */
+  overflow: hidden;
+  /* Add styles for the carousel content here */
+  position: relative;
+  z-index: 1; /* Set a higher z-index value for the carousel */
+}
+
+/* ... (Previous styles) */
+
+.page-heading {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif; /* Wikipedia-like font */
+  font-size: 36px; /* Adjust the font size as needed */
+  font-weight: bold;
+  color: #fff; /* Wikipedia-like text color */
+  margin-bottom: 20px; /* Adding space between heading and login box */
+  text-align: center;
+  position: relative;
+}
+
+.login-box {
+  background-color: #f5c518; /* IMDb-like box color */
+  padding: 20px;
+  border-radius: 8px;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 40px; /* Increased space between login box and carousel */
+}
+
+/* ... (Other styles) */

@@ -1,0 +1,51 @@
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* background-color: rgba(255, 255, 255, 0.8); Semi-transparent background */
+  /* z-index: 9999; */
+  /* Ensure loader stays on top of other content */
+}
+
+.loader p {
+  font-size: 18px;
+  color: #333; /* Dark text color */
+  text-align: center;
+  font-weight: bold;
+  padding: 20px;
+  background-color: #fff; /* white background */
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Shadow effect */
+}
+
+/* Animation for loader */
+@keyframes pulse {
+  0% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0.7);
+  }
+  70% {
+    transform: scale(1);
+    box-shadow: 0 0 0 10px rgba(0, 0, 0, 0);
+  }
+  100% {
+    transform: scale(0.95);
+    box-shadow: 0 0 0 0 rgba(0, 0, 0, 0);
+  }
+}
+
+.loader p::after {
+  content: "";
+  display: block;
+  width: 10px;
+  height: 10px;
+  margin: 10px auto;
+  border-radius: 50%;
+  background-color: #007bff; /* Loader dot color */
+  animation: pulse 1s infinite; /* Animation effect */
+}

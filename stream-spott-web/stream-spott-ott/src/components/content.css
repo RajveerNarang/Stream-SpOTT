@@ -1,0 +1,113 @@
+/* styles.css */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.content-page {
+  overflow: hidden; /* Clear floating elements */
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+
+.stream-heading {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 20px;
+}
+
+.content-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px;
+  justify-content: flex-start;
+}
+
+.content-item {
+  width: 200px;
+  cursor: pointer;
+}
+
+.content-item img,
+.content-item video {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+.content-item h3 {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 16px;
+}
+
+/* Example styling, adjust as needed for the Netflix/Disney+ look */
+
+/* Dark Mode Light Mode Switch */
+
+/* ContentPage.css */
+/* ... (other styles) */
+
+.dark-mode {
+  /* background-color: #1f1f1f; */
+  background-color: #fff;
+  color: #333;
+}
+
+.theme-toggler {
+  cursor: pointer;
+  text-align: center;
+  padding: 10px;
+  /* margin-bottom: 10px; */
+
+  color: #fff;
+  border-radius: 5px;
+  width: 200px;
+  /* margin: 10px auto; */
+  margin-left: auto; /* Pushes the button to the right */
+  margin-bottom: 20px;
+  z-index: 10000;
+}
+
+/* .dark-mode {
+  color: #fff;
+  background-color: #050505;
+}*/
+
+/* Example styling for light and dark modes */
+
+/* ContentPage.css */
+
+/* Additional styling for light and dark modes */
+.button-group {
+  display: flex;
+  align-items: center;
+}
+
+.theme-toggler {
+  margin-right: 10px;
+}
+
+.logout-button {
+  background-color: #ff0000; /* Adjust styles as needed */
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 4px;
+  cursor: pointer;
+  z-index: 10000;
+}
+
+.user-greeting {
+  position: absolute;
+  top: 10px; /* Adjust as needed */
+  right: 10px; /* Adjust as needed */
+  font-size: 16px;
+  color: #333; /* Dark text color */
+}
+.white-text {
+  color: #fff;
+}

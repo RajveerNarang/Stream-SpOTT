@@ -1,0 +1,29 @@
+.search-form {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add margin to separate from theme toggler */
+}
+
+.search-input {
+  width: 28vh;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px; /* Add margin between input and button */
+  flex: 1; /* Expand input to fill available space */
+}
+
+.search-button {
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 50%;
+}
+
+/* Hover effect */
+.search-button:hover {
+  background-color: #0056b3;
+}
