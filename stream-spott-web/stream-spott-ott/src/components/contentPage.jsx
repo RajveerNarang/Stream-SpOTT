@@ -79,14 +79,19 @@ const ContentPage = () => {
   return (
     <div
       className={
-        isDarkMode ? "content-page dark-mode" : "content-page white-ctn"
+        isDarkMode
+          ? "content-page dark-mode black-text-theme"
+          : "content-page white-text-theme"
       }
     >
       <h1 className="stream-heading">Stream SpOTT</h1>
       <div
         // className={`theme-toggler ${!isDarkMode ? "white-ctn" : ""}`}
         className="theme-toggler"
-        style={{ backgroundColor: !isDarkMode ? "white" : "black" }}
+        style={{
+          backgroundColor: !isDarkMode ? "white" : "black",
+          color: isDarkMode ? "white" : "black",
+        }}
         onClick={toggleTheme}
       >
         {isDarkMode ? "Dark Mode" : "Light Mode"}

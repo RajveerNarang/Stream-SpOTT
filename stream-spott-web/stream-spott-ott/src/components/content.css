@@ -44,7 +44,7 @@ body {
   font-size: 16px;
 }
 
-/* Example styling, adjust as needed for the Netflix/Disney+ look */
+/*  styling, adjust as needed for */
 
 /* Dark Mode Light Mode Switch */
 
@@ -63,7 +63,6 @@ body {
   padding: 10px;
   /* margin-bottom: 10px; */
 
-  color: #fff;
   border-radius: 5px;
   width: 200px;
   /* margin: 10px auto; */
@@ -109,5 +108,9 @@ body {
   color: #333; /* Dark text color */
 }
 .white-text {
+  color: #fff;
+}
+
+.white-text-theme {
   color: #fff;
 }
